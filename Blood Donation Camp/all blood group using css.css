@@ -1,0 +1,33 @@
+body 
+{
+    background-image: url('Blood pic for all kind blood.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.button-container 
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.nav-button 
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px ;
+    background-color: #1cceb3;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    height:180px;
+    width: 180px;
+    text-align: center;
+}
+.nav-button:hover 
+{          
+    background-color: #27a29c;
+}
+

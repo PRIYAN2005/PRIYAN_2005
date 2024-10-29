@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(222, 234, 245);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 42px;
+    color: #f68549;
+    font-weight: bold;
+    font-weight: underline;
+    text-align: center;
+}
+#donars {
+    font-size: 20px;
+    color: #0037ff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+table {
+  border-collapse: collapse;
+  width: 1475px;
+  background-color: aliceblue;
+}
+
+table, td {
+  border: 3px solid rgb(255, 255, 255);
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+tr:hover {
+  background-color: #ddd6d6c2;
+}
+
+tr:nth-child(1) {
+  background-color: #a6edca;
+}
+
+p {
+  margin: 0;
+  color: rgb(16, 16, 16);
+}
+
+footer {
+  background-color: #cfa8a878;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  .left-side {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .left-side li {
+    display: inline;
+    margin-right: 20px; 
+  }
+  .right-side {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .right-side li {
+    display: inline;
+    margin-left: 20px;
+  }
+  .footer-button {
+    text-decoration: none;
+    background-color: #0077B5; 
+    color: #fff;
+    padding: 10px 20px; 
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-button:hover {
+    background-color: #00568C;
+  }
+  @media screen and (max-width :800px) {
+    .body{
+      width: 100%;
+      padding: 0;
+    }
+  }

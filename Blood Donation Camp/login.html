@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+    background-image: url('Login page.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 15%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgba(248, 247, 247, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"] {
+            width: 90%;
+            padding: 6px;
+            margin-bottom: 5px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        p {
+        margin: 20px 0; 
+        }
+        p a {
+        text-decoration: none; 
+        }
+        p a button[type="Register"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+        }
+        p a button[type="Register"]:hover {
+        background-color: #0056b3;
+        }
+        @media screen and (max-width :800px) {
+            .body{
+            width: 100%;
+            padding: 0;
+        }
+  }
+    </style>
+</head>
+
+<script>
+    function validateform(){
+    var name=document.myform.name.value;
+    var password=document.myform.password.value;
+    var email=document.myform.email.value;
+    
+    if(name==null || name==""){
+    alert("Name can't be blank");
+    return false;
+    }else if(password.length<6){
+    alert("Password must be at least 6 characters long.");
+    return false;
+    }
+    else if (email==null || email==""){
+    alert("email can't be blank");
+    return false;
+            
+            }
+
+    }
+    function myfunction() {
+                alert("Login Succesfully .")
+    }
+            
+    </script>
+    <style>
+        .red::after {
+        content: ' *';
+        color: red;
+      }
+    </style>
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+
+            <form action="services.html" name="myform"  onsubmit="return validateform()">
+                <label class="red">Name:</label><br>
+                <input type="text" name="name" required placeholder="Enter registered name"><br><br>
+
+                <label class="red">Email:</label><br>
+                <input type="email" name="email" required placeholder="Enter registered email"><br><br>
+
+                <label class="red">Password:</label><br>
+                <input type="password" name="password" required placeholder="Enter registered password"><br><br>
+
+                <p align="center">
+                    <a><button type="Register" onclick="myfunction()">log-in</button></a>
+                </p>
+                
+                <p align="center">
+                        <u>
+                            <b>
+                                <a href="T&C.html">Terms & conditions</a>
+                            </b>
+                        </u>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
